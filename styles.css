@@ -1,0 +1,191 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    direction: rtl;
+}
+
+header {
+    background-color: #ebff00;
+    color: #0c7518;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+#about {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.gallery img {
+    width: 45%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#booking {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#booking form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#booking input, #booking button {
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#booking button {
+    background-color: #0077b6;
+    color: white;
+    cursor: pointer;
+}
+
+#booking button:hover {
+    background-color: #023e8a;
+}
+
+footer {
+    background-color: #ebff00;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+a {
+    color: #0c7518;
+    text-decoration: none;
+}
+h2
+{
+    color: #0c7518;
+}
+p {
+    color: #0c7518;
+}
+img {
+    color: #0c7518;
+}
+/* تخصيص خلفية الصفحة */
+
+/* تخصيص حاوية الزر */
+.button-container {
+    text-align: center; /* تمركز النص داخل الحاوية */
+}
+
+/* تخصيص تصميم الزر */
+.custom-button {
+    padding: 15px 30px; /* التباعد الداخلي للزر */
+    font-size: 18px; /* حجم الخط */
+    color:#0c7518; /* لون النص */
+    background-color:#f4f4f4; /* لون خلفية الزر */
+    border: 2px solid #0c7518; /* لون الإطار */
+    border-radius: 8px; /* تقريب الزوايا */
+    cursor: pointer; /* تغيير المؤشر عند التحويم */
+    transition: all 0.3s ease; /* تأثير انتقال ناعم */
+    outline: none; /* إزالة حد التركيز الافتراضي */
+}
+
+/* تغييرات عند التحويم على الزر */
+.custom-button:hover {
+    background-color: #ebff00; /* تغيير لون الخلفية عند التحويم */
+    border-color:  #0c7518; /* تغيير لون الإطار عند التحويم */
+    transform: scale(1.05); /* تكبير الزر قليلاً */
+}
+
+/* تغييرات عند الضغط على الزر */
+.custom-button:active {
+    background-color: #004085; /* تغيير لون الخلفية عند الضغط */
+    transform: scale(0.95); /* تصغير الزر قليلاً */
+}
+/* تنسيق عام للصفحة */
+
+
+/* الحاوية الرئيسية */
+/* الحاوية الرئيسية */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* جانبا الشاشة */
+.side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1; /* يجعل الجانبين متساويين في العرض */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* الجهة اليسرى */
+.left {
+    background-color: #f0f8ff;
+}
+/* الجهة اليمنى */
+.right {
+    background-color: #f0f8ff;
+}
+
+/* الصور */
+.image img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* النصوص */
+.text {
+    color: #0c7518;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* الخط العمودي في المنتصف */
+.divider {
+    width: 2px;
+    background-color: #0c7518;
+    margin: 0 20px;
+}
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .divider {
+        width: 100%;
+        height: 2px;
+        margin: 20px 0;
+    }
+
+    .side {
+        flex: none;
+        width: 100%;
+    }
+}
