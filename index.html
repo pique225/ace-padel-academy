@@ -7,76 +7,82 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+    
     <header>
-        <img src="image1.jpg" width="100px" height="100px" alt="شعار الأكاديمية">
+        <img src="image1.jpg" width="100px" height="100px">
         <h1>Ace Padel Academy</h1>
-        <p><b>مرحبًا بك في أكاديمية البادل الخاصة بنا!</b></p>
+        <p><b> مرحبًا بك في أكاديمية البادل الخاصة بنا! </b></p>
     </header>
-
     <section id="about">
         <h2>عن الأكاديمية</h2>
         <p>نحن نقدم تدريبات احترافية في رياضة البادل مع أفضل الكوادر والملاعب المجهزة بأحدث التقنيات.</p>
         <div class="gallery">
-            <!-- يمكنك إضافة صور هنا -->
         </div>
     </section>
-
     <br>
     <br>
-
     <div class="button-container">
-        <button class="custom-button"><a href="https://www.instagram.com/ace.academy.sy/">احجز الآن</a></button>
-    </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <div class="container">
-        <!-- الجهة اليسرى -->
-        <div class="side left">
-            <div class="image">
-                <img src="image2.jpg" alt="صورة 1">
+        <div class="container">
+            <!-- الجهة اليسرى -->
+            <div class="side left">
+                <div class="image">
+                    <img src="image2.jpg" alt="صورة 1">
+                </div>
+                <div class="text">
+                    <p>جميع الذين يريدون تجربة المتعة في رياضة البادل التواصل مع الكوتش يمان نغنغ </p>
+                    <ol>
+                        <li> 0959776423</li>
+                        <li><a href="https://www.instagram.com/noghnogh_yaman/?__pwa=1#" target="_blank">instagram </a></li>
+                        
+                    </ol>
+                </div>
             </div>
-            <div class="text">
-                <p>جميع الذين يريدون تجربة المتعة في رياضة البادل التواصل مع الكوتش يمان نغنغ</p>
-                <ol>
-                    <li>0959776423</li>
-                    <li><a href="https://www.instagram.com/noghnogh_yaman/?__pwa=1#" target="_blank">Instagram</a></li>
-                </ol>
-            </div>
-        </div>
-
-        <!-- الخط العمودي -->
-        <div class="divider"></div>
-
-        <!-- الجهة اليمنى -->
-        <div class="side right">
-            <div class="image">
-                <img src="image3.jpg" alt="صورة 2">
-            </div>
-            <div class="text">
-                <p>هذا نص بجانب الصورة الثانية.</p>
+    
+            <!-- الخط العمودي -->
+            <div class="divider"></div>
+    
+            <!-- الجهة اليمنى -->
+            <div class="side right">
+                <div class="image">
+                    <img src="image3.jpg" alt="صورة 2">
+                </div>
+                <div class="text">
+                    <p>هذا نص بجانب الصورة الثانية.</p>
+                </div>
             </div>
         </div>
-    </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <footer>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <section id="booking">
+                <h2>احجز الآن</h2>
+                <form id="bookingForm" action="process_booking.php" method="POST">
+                    <label for="name">اسمك:</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="date">التاريخ:</label>
+                    <input type="date" id="date" name="date" required>
+            
+                    <label for="time">الوقت:</label>
+                    <input type="time" id="time" name="time" required>
+            
+                    <button type="submit">تأكيد الحجز</button>
+                </form>
+            </section>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <footer>
         <p>تابعونا على إنستغرام: 
             <a href="https://www.instagram.com/ace.academy.sy/" target="_blank">@ace.academy.sy</a>
         </p>
     </footer>
-
 </body>
 </html>
