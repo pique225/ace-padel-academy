@@ -54,20 +54,19 @@ header h1 {
 }
 
 #booking button {
-    background-color: #0077b6;
-    color: white;
+    background-color: #f0f8ff;
+    color: #0c7518;
     cursor: pointer;
 }
 
 #booking button:hover {
-    background-color: #023e8a;
+    background-color: #ebff00;
 }
 
 footer {
     background-color: #ebff00;
     color: rgb(0, 0, 0);
     padding: 10px;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
